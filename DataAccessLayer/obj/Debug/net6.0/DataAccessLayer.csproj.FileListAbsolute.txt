@@ -1,0 +1,17 @@
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.deps.json
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.runtimeconfig.json
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.dll
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/bin/Debug/net6.0/DataAccessLayer.pdb
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/bin/Debug/net6.0/EntityLayer.dll
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/bin/Debug/net6.0/EntityLayer.pdb
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.csproj.CopyComplete
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.dll
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/refint/DataAccessLayer.dll
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.pdb
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/DataAccessLayer.genruntimeconfig.cache
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/DataAccessLayer/obj/Debug/net6.0/ref/DataAccessLayer.dll

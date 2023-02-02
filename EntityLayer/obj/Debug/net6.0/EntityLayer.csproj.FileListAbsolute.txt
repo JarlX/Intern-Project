@@ -1,0 +1,12 @@
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/bin/Debug/net6.0/EntityLayer.deps.json
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/bin/Debug/net6.0/EntityLayer.dll
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/bin/Debug/net6.0/EntityLayer.pdb
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/EntityLayer.AssemblyInfo.cs
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/EntityLayer.dll
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/refint/EntityLayer.dll
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/EntityLayer.pdb
+/Users/salihcancakar/Desktop/PersonelMVCUI2/PersonelMVCUI2/EntityLayer/obj/Debug/net6.0/ref/EntityLayer.dll

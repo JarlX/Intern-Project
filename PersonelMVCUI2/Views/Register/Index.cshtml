@@ -1,0 +1,123 @@
+﻿@model EntityLayer.Concrete.Writer
+@{
+    ViewData["Title"] = "Index";
+    Layout = "UserLayout";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <h3 class="tittle">Yazar Kayıt Sayfası</h3>
+        <div class="inner-sec">
+            <div class="login p-5 bg-light mx-auto mw-100">
+                @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                {
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom01">Adınız Soyadınız</label>
+                            @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.WriterName, "", new { @class = "text-danger" })
+                            @*<input type="text" class="form-control" id="validationDefault01" name="WriterName" placeholder="" required="">*@
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="validationCustom02">Mail Adresi</label>
+                            @Html.TextBoxFor(x => x.WriterMail, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.WriterMail, "", new { @class = "text-danger" })
+
+                            @*<input type="email" class="form-control" id="validationDefault02"  name="WriterMail" placeholder="" required="">*@
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword1 mb-2">Şifreniz</label>
+                            @Html.TextBoxFor(x => x.WriterPassword, new { @class = "form-control", id = "password1" })
+                            @Html.ValidationMessageFor(x => x.WriterPassword, "", new { @class = "text-danger" })
+                            @*<input type="password" class="form-control" id="password1" name="WriterPassword" placeholder="" required="">*@
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword2 mb-2">Şifreinizi doğrulayın..</label>
+                            @Html.TextBoxFor(x => x.WriterName, new { @class = "form-control", id = "password2" })
+                            @Html.ValidationMessageFor(x => x.WriterPassword, "", new { @class = "text-danger" })
+                            @*<input type="password" class="form-control" id="password2" placeholder="" required="">*@
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="exampleInputPassword2 mb-2">Görsel yolu</label>
+                            @Html.TextBoxFor(x => x.WriterImage, new { @class = "form-control" })
+                            @Html.ValidationMessageFor(x => x.WriterImage)
+                            @*<input type="text" class="form-control" id="WriterImage" placeholder="" required="">*@
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-info mb-4">Görsel Yükle</button>
+                    <button type="submit" class="btn btn-primary submit mb-4" id="kayitol">Kayıt Ol</button>
+                    <p>
+                        <a href="#" id="btn1">Kayıt olduğunuzda şartlarımızı kabul etmiş sayılırsınız.</a>
+                    </p>
+                }
+            </div>
+        </div>
+    </div>
+    <br />
+    <script>$('#btn1').click(function () {
+            swal("Site Kabul Şartları", "İşbu Bilgilendirme Yazısını okuduğumu ve 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında," +
+                " kişisel verilerinin bu site tarafından yasadaki esaslar çerçevesinde toplanmasına, kaydedilmesine" +
+                ", işlenmesine ve saklanmasına peşinen izin verdiğimi kabul, beyan ve taahhüt ederim. 6698 sayılı “Kişisel Verilerin " +
+                "Korunması Kanunu” gereğince kişisel verilerimin ve özel nitelikli kişisel verilerimin bu site" +
+                "tarafından işlenmesine ilişkin bu siteye tarafımca sözlü/yazılı ve/veya elektronik ortamda " +
+                "verilen kimliğimi belirleyen veya belirlemeye yarayanlar da dahil olmak üzere her türlü kişisel verimin ve özel " +
+                "nitelikli kişisel verimin bu site tarafından işlenmesine ve ürün alım/satım sözleşmeleri de " +
+                "dahil olmak üzere merkezimiz ile etkileşime geçen, aday, çalışan, ziyaretçi, veli/vasi, tedarikçi ve diğer üçüncü" +
+                " kişilerin bilgileri kanunun ve sözleşmelerin gereği ile hizmetlerin planlanması amacıyla, ilgili mevzuatlar kapsamında " +
+                "paylaşımın gerekli olduğu diğer kişi ve kuruluşlar ile paylaşılmasına; kişisel veriler ve özel nitelikli kişisel " +
+                "verilerimin 6698 sayılı Kişisel Verilerin Korunması Kanununda tanımlanan kapsamda aşağıda detayları verilen kişisel " +
+                "ve özel nitelikli kişisel verilerin işlenmesine muvafakat ettiğimi kabul, beyan ve taahhüt ederim.");
+        });</script>
+
+    <script>document.querySelector('#kayitol').addEventListener('submit', function (e) {
+            var form = this;
+
+            e.preventDefault();
+
+            swal({
+                title: "Are you sure?",
+                text: "You will not be able to recover this imaginary file!",
+                icon: "warning",
+                buttons: [
+                    'No, cancel it!',
+                    'Yes, I am sure!'
+                ],
+                dangerMode: true,
+            }).then(function (isConfirm) {
+                if (isConfirm) {
+                    swal({
+                        title: 'Shortlisted!',
+                        text: 'Candidates are successfully shortlisted!',
+                        icon: 'success'
+                    }).then(function () {
+                        form.submit();
+                    });
+                } else {
+                    swal("Cancelled", "Your imaginary file is safe :)", "error");
+                }
+            });
+        });
+    </script>
+
+    <style>
+        .swal-button--confirm {
+            background-color: #DD6B55;
+        }
+    </style>
+
+
+
+
+
+
+
+
+</section>
+
+

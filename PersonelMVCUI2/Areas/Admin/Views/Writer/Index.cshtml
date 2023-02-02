@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+   ViewData["Title"] = "Index";
+    Layout = "AdminLayout";
+}
+
+<h1>Yazar Ajax İşlemleri</h1>
+<br />
+
+<button type="button" id="btngetlist" class="btn btn-outline-primary">Yazarları Getir</button>
+<button type="button" id="btngetlistid" class="btn btn-outline-secondary">Id ye göre yazar getir</button>
+<br /><br />
+<input id="idinput" placeholder="ID girin" />
+
+<div id="writerlist">
+
+    Buraya yazarlar gelecek
+</div>
+@section scripts{
+
+<script>
+    $("#btngetlist").click(function () {
+        $.ajax({
+            contentType: "application/json",
+            dataType: "Json",
+            type: "GET",
+            url: "/Admin/Writer/WriterList",
+            success: function (func) {
+                let w = JSON.parse(func);
+                console.log(func)
+                let tablehtml = "<table class='table table-bordered'> <tr><th>Yazar ID</th> <th>İsim</th></tr>";
+                $.each(w, (index, value) => {
+                    tablehtml += `<tr><td>${value.Id}</td> <td>${value.Name}</td></tr>`
+                });
+                tablehtml += "<table>";
+                $("#writerlist").html(tablehtml);
+            }
+        });
+    });
+
+    $("#btngetlistid").click(function () {
+        let id = $("#writerid").val();
+        $.ajax({
+            contentType: "application/json",
+            dataType: "Json",
+            type: "GET",
+            url: "/Admin/Writer/WriterListById",
+            data: { writerid: id },
+            success: function (func) {
+                let w = JSON.parse(func);
+                console.log(func)
+            }
+        });
+
+    });
+
+</script>
+
+    l
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/PersonelMVCUI2.props" />
+</Project>

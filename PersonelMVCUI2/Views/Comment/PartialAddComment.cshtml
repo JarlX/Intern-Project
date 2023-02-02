@@ -1,0 +1,17 @@
+﻿<div class="comment-top">
+    <h4>Yorum Yapın</h4>
+    <div class="comment-bottom">
+        <form action="/Comment/PartialAddComment/" method="post">
+            <input class="form-control" type="text" name="CommentUserName" placeholder="İsminiz" required="">
+            <input class="form-control" type="text" name="CommentTitle" placeholder="Konu" required="">
+            <textarea class="form-control" name="CommentContent" placeholder="Mesaj..." required=""></textarea>
+            <button id="yorumbtn" type="submit" class="btn btn-primary submit">Gönder</button>
+        </form>
+    </div>
+</div>
+
+<script>    $("#yorumbtn").click(function () {
+        swal("Yorumunuz başarı ile gönderilmiştir", " ", "success");
+    })
+
+</script>

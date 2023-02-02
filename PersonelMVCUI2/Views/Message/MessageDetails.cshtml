@@ -1,0 +1,17 @@
+﻿@model EntityLayer.Concrete.Message2
+
+@{
+    ViewData["Title"] = "MessageDetails";
+    Layout = "WriterLayout";
+}
+
+<h1>Mesaj Detay Sayfası</h1>
+    <br />
+    @Html.Label("Mesaj Konusu")
+    @Html.TextAreaFor(x => x.Subject, new { @class = " form-control",disabled="disabled" })
+
+    <br />
+    @Html.Label("Mesaj İçeriği")
+    @Html.TextAreaFor(x => x.MessageDetails, new { @class = " form-control", disabled="disabled" })
+    <br />
+    <buton class="btn btn-success">Mesajlara Dön</buton>
